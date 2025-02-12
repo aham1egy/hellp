@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدعم</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        /* الشريط العلوي */
+        .navbar {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* أيقونة الرجوع */
+        .back-icon {
+            position: absolute;
+            left: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .back-icon:hover {
+            transform: scale(1.2);
+        }
+
+        /* المحتوى الرئيسي */
+        .content {
+            padding-top: 100px;
+            padding-bottom: 60px;
+        }
+
+        .content h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        .content img {
+            width: 150px;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .content p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .content button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .content button:hover {
+            background-color: #45a049;
+        }
+
+        /* جملة تابعونا */
+        .follow-us {
+            position: fixed;
+            bottom: 70px; /* فوق الشريط السفلي */
+            width: 100%;
+            font-size: 18px;
+            color: #555;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px 0;
+            z-index: 999;
+        }
+
+        /* الشريط السفلي */
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            z-index: 1000;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer a {
+            margin: 0 10px;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .footer img {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+        }
+
+        .footer a:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الشريط العلوي -->
+    <div class="navbar">
+        <span class="back-icon" onclick="goBack()">←</span>
+        <h1>الدعم</h1>
+    </div>
+
+    <!-- المحتوى الرئيسي -->
+    <div class="content">
+        <h1>Mohamed GM</h1>
+        <img src="https://cdn.pixabay.com/photo/2024/01/25/06/56/ai-generated-8531096_640.png" alt="صورة التطبيق">
+        <p>الإصدار: 1.0.0</p>
+        <button onclick="alert('سيتم التحقق من التحديثات...')">تحديث التطبيق</button>
+    </div>
+
+    <!-- جملة تابعونا -->
+    <div class="follow-us">
+        تابعونا على مواقع التواصل الاجتماعي
+    </div>
+
+    <!-- الشريط السفلي -->
+    <div class="footer">
+        <a href="https://instagram.com" target="_blank">
+            <img src="https://png.pngtree.com/element_our/md/20180524/md_5b072d393d61e.jpg" alt="انستجرام">
+        </a>
+        <a href="https://telegram.org" target="_blank">
+            <img src="https://png.pngtree.com/png-vector/20240528/ourlarge/pngtree-this-is-an-android-app-showing-the-telegram-icon-vector-png-image_6956996.png" alt="تلجرام">
+        </a>
+        <a href="https://facebook.com" target="_blank">
+            <img src="https://png.pngtree.com/element_our/md/20180524/md_5b072d1cf1261.jpg" alt="فيسبوك">
+        </a>
+        <a href="https://youtube.com" target="_blank">
+            <img src="https://png.pngtree.com/element_our/md/20180524/md_5b072d1cf1261.jpg" alt="يوتيوب">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="https://png.pngtree.com/element_our/md/20180524/md_5b072f1c21cb2.jpg" alt="تويتر">
+        </a>
+    </div>
+
+    <script>
+        // دالة الرجوع للخلف
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+</body>
+</html>
