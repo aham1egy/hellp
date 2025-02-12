@@ -86,16 +86,26 @@
             background-color: #45a049;
         }
 
-        /* جملة تابعونا */
-        .follow-us {
-            position: fixed;
-            bottom: 70px; /* فوق الشريط السفلي */
-            width: 100%;
-            font-size: 18px;
+        /* وصف التطبيق */
+        .app-description {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            text-align: right;
+        }
+
+        .app-description h2 {
+            font-size: 24px;
+            color: #4CAF50;
+        }
+
+        .app-description p {
+            font-size: 16px;
             color: #555;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 10px 0;
-            z-index: 999;
+            line-height: 1.6;
         }
 
         /* الشريط السفلي */
@@ -110,10 +120,13 @@
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
             box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
         }
 
         .footer a {
-            margin: 0 10px;
             text-decoration: none;
             transition: transform 0.3s ease;
         }
@@ -126,6 +139,13 @@
 
         .footer a:hover {
             transform: scale(1.2);
+        }
+
+        /* جملة تابعونا في الشريط السفلي */
+        .footer .follow-text {
+            font-size: 14px; /* خط صغير */
+            margin: 0 10px;
+            color: white;
         }
     </style>
 </head>
@@ -143,11 +163,27 @@
         <img src="https://cdn.pixabay.com/photo/2024/01/25/06/56/ai-generated-8531096_640.png" alt="صورة التطبيق">
         <p>الإصدار: 1.0.0</p>
         <button onclick="alert('سيتم التحقق من التحديثات...')">تحديث التطبيق</button>
-    </div>
 
-    <!-- جملة تابعونا -->
-    <div class="follow-us">
-        تابعونا على مواقع التواصل الاجتماعي
+        <!-- وصف التطبيق -->
+        <div class="app-description">
+            <h2>🎮 تطبيق الألعاب الممتع الذي يلبي جميع أذواقك!</h2>
+            <p>
+                استمتع بتجربة لا تُنسى مع تطبيقنا الذي يقدم لك <strong>مجموعة ضخمة من الألعاب المتنوعة</strong>، بدءًا من الألعاب الكلاسيكية وحتى أحدث الألعاب الحديثة. سواء كنت من محبي الألعاب الإستراتيجية، الأكشن، الألغاز، أو الألعاب الرياضية، ستجد كل ما تحتاجه هنا!  
+                <br><br>
+                ✨ <strong>مميزات التطبيق:</strong>  
+                - تحديثات مدى الحياة: احصل على ألعاب جديدة وميزات مثيرة بشكل دوري دون توقف.  
+                - دعم فني 24/7: فريق الدعم متاح على مدار الساعة لمساعدتك في أي استفسار أو مشكلة تواجهها.  
+                - ألعاب حديثة باستمرار: نحرص على تزويدك بأحدث الألعاب التي تناسب جميع الأعمار والأذواق.  
+                - واجهة سهلة الاستخدام: تصميم بسيط وجذاب يجعل تجربة اللعب أكثر متعة وسلاسة.  
+                <br><br>
+                🔥 <strong>لماذا تختار تطبيقنا؟</strong>  
+                - تنوع لا مثيل له: العب ما تشاء، وقتما تشاء، مع مكتبة ألعاب لا تنتهي.  
+                - تحديثات مستمرة: كن دائمًا في الصدارة مع ألعاب جديدة تُضاف باستمرار.  
+                - دعم فني مميز: نحن هنا من أجلك على مدار الساعة لتقديم أفضل تجربة ممكنة.  
+                <br><br>
+                انضم إلينا الآن واستمتع بتجربة ألعاب غير عادية مع تطبيقنا الذي يجمع بين المتعة والجودة! 🚀  
+            </p>
+        </div>
     </div>
 
     <!-- الشريط السفلي -->
@@ -167,6 +203,7 @@
         <a href="https://twitter.com" target="_blank">
             <img src="https://png.pngtree.com/element_our/md/20180524/md_5b072f1c21cb2.jpg" alt="تويتر">
         </a>
+        <span class="follow-text">تابعونا على مواقع التواصل الاجتماعي</span>
     </div>
 
     <script>
